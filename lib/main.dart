@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'exo1.dart';
 import 'exo2.dart';
-import 'exo3.dart'; // importer la page Exercice 3
+import 'exo3.dart';
 
 void main() {
   runApp(const MyApp());
@@ -40,7 +40,7 @@ class HomePage extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => const Exo1Page()),
                 );
               },
-              child: const Text('Exercice 1'),
+              child: const Text('Exercice 1 : Boutons'),
             ),
             const SizedBox(height: 20),
             ElevatedButton(
@@ -50,7 +50,9 @@ class HomePage extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => const Exo2Page()),
                 );
               },
-              child: const Text('Exercice 2'),
+              child: const Text(
+                'Exercice 2 : Calculatrice avec boutons simples',
+              ),
             ),
             const SizedBox(height: 20),
             ElevatedButton(
@@ -60,7 +62,9 @@ class HomePage extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => const Exo3Page()),
                 );
               },
-              child: const Text('Exercice 3'), // Nouveau bouton
+              child: const Text(
+                'Exercice 3 : Calculatrice avec boutons radios',
+              ),
             ),
           ],
         ),
